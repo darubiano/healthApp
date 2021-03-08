@@ -9,10 +9,10 @@ class ButtonFat extends StatelessWidget {
 
   ButtonFat({
     this.icon = FontAwesomeIcons.circle,
-    @required this.titulo,
+    this.titulo,
     this.color1 = Colors.grey,
     this.color2 = Colors.blueGrey,
-    @required this.onPress
+    this.onPress
   });
 
   @override
@@ -48,9 +48,9 @@ class _ButtonStyle extends StatelessWidget {
   final IconData icon;
   final Color color1,color2;
   _ButtonStyle({
-    @required this.color1,
-    @required this.color2,
-    @required this.icon
+    this.color1,
+    this.color2,
+    this.icon
     });
   @override
   Widget build(BuildContext context) {

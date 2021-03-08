@@ -9,12 +9,12 @@ class IconHeader extends StatelessWidget {
   final String titulo,subtitulo;
   final Color color1,color2;
   IconHeader({
-  @required this.icon1,
-  @required this.icon2,
-  @required this.titulo,
-  @required this.subtitulo,
-   this.color1 = Colors.grey,
-   this.color2 = Colors.blueGrey
+  this.icon1,
+  this.icon2,
+  this.titulo,
+  this.subtitulo,
+  this.color1 = Colors.grey,
+  this.color2 = Colors.blueGrey
   });
   @override
   Widget build(BuildContext context) {
@@ -46,8 +46,8 @@ class IconHeader extends StatelessWidget {
 class _IconHeaderBackground extends StatelessWidget {
   final Color color1,color2;
   _IconHeaderBackground({
-    @required this.color1,
-    @required this.color2});
+    this.color1,
+    this.color2});
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.of(context).size;
